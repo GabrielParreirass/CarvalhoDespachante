@@ -30,7 +30,24 @@
         </nav>
 
         <div class="navMobile">
-            <img src="assets/imgs/icons8-menu-rounded-50.png" alt="">
+            <img src="assets/imgs/icons8-menu-rounded-50.png" alt=""  onClick="handleClickMobile()">
+        </div>
+
+        <div class="menuMobile hidden" id="menuMobile">
+            <div class="containerMenuMobile">
+                <div class="closeMobile">
+                    <img src="assets/imgs/close.png" alt="" onClick="handleCloseMobile()">
+                </div>
+                <ul class="listMobile">
+                    <li>Cálculo IPVA 0km</li>
+                    <li>Serviços</li>
+                    <li>Clientes</li>
+                    <li>Contato</li>
+                    <li>Pagamento</li>
+                    <li>Orçamento</li>
+                    <li class="wppHeaderMobile">Fale concosco!</li>
+                </ul>
+            </div>
         </div>
 
     </header>
@@ -52,6 +69,9 @@
         </section>
 
     </main>
+
+
+    <script src="script.js"></script>
 
 </body>
 
