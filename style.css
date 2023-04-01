@@ -82,16 +82,12 @@ nav ul li:hover{
 }
 
 .hidden{
-  opacity: 0;
-  transform: translateY(-100%);
-  animation: 1s ease-in;
+  display: none;
 
 }
 
 .show {
-  opacity: 1;
-  transform: translateY(0%);
-  animation: 1s ease-in;
+  display: box;
 
 }
 
