@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/** Começo Header  */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.logo {
+  text-align: center;
+  padding-bottom: 1rem; 
+}
+
+nav {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li{
+    transition: .3s;
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding-bottom: 1rem;    
+}
+
+nav ul li:hover{
+    border-bottom: 1px solid #005aaa;
+}
+
+.wppHeader {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #005aaa;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #005aaa;
+  transition: 0.3s;
+}
+
+.wppHeader:hover {
+  background-color: #fff;
+  color: #005aaa;
+}
+
+.navMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1440px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    flex-direction: column;
+  }
+
+  .logo {
+    text-align: center;
+    padding-bottom: 0rem; 
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  nav {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    flex-direction: row;
+  }
+
+  .navMobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo {
+    text-align: center;
+    padding-bottom: 0rem; 
+    margin-bottom: 0rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .logo img{
+    width: 90%;
+  }
+}
+
+/*! Fim Header  */
+
+
+/** Começo Hero */
+
+.hero{
+  background-color: #137edc;
+  padding: 3rem;
+}
+
+.titleHero{
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.textHero{
+  color: #000000;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font-size: 1.3rem;
+}
+
+.containerButtonHero{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.containerButtonHero button{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #005aaa;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #005aaa;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+
+.containerButtonHero button:hover{
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.333);
+}
+
+
+@media only screen and (max-width: 900px) {
+  .titleHero{
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+
+  .textHero{
+    color: #000000;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-size: 1.3rem;
+  }
+}
+
+/*! Fim Hero  */
+
+
+/** Começo clientes */
+
+/*! Fim clientes  */
