@@ -114,6 +114,10 @@ nav ul li:hover{
   .logo img{
     width: 90%;
   }
+
+  .navMobile img{
+    width: 90%;
+  }
 }
 
 /*! Fim Header  */
