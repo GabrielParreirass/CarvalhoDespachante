@@ -264,5 +264,24 @@ nav ul li:hover{
 
 
 /** Começo clientes */
+.clientes{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.titleClientes{
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #005aaa;
+}
+
+.containerMarquee{
+  margin-top: 2rem;
+}
+
+.card{
+  text-align: center;
+}
 
 /*! Fim clientes  */
