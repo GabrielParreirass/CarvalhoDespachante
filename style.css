@@ -194,7 +194,7 @@ nav ul li:hover{
   padding: 3rem;
 }
 
-.titleHero{
+.titleHero h1{
   color: #fff;
   font-size: 2.5rem;
   font-weight: bold;
@@ -288,13 +288,13 @@ nav ul li:hover{
 }
 
 .textClientes p{
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
   text-align: justify;
 }
 
 .textClientes ul{
-  font-size: 1rem;
+  font-size: 1.1rem;
   list-style: none;
 }
 
@@ -311,6 +311,101 @@ nav ul li:hover{
     padding-top: 2rem;
   
   }
+
+  .textClientes p{
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+  
+  .textClientes ul{
+    font-size: 1rem;
+    list-style: none;
+  }
 }
 
 /*! Fim clientes  */
+
+
+
+/** Começo fale consoco */
+
+.faleConosco{
+  margin-top: 1rem;
+  background-color: #137edc;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 1rem;
+}
+
+.titleFaleConosco{
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.containerContatos{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.containerContatos img{
+  height: 2rem;
+  width: 2rem;
+}
+
+
+
+.cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+}
+
+.cont p{
+  margin-top: 1rem;
+}
+
+.containerMaps{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-maps{
+  border-radius: 10px;
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.521);
+}
+
+
+@media only screen and (max-width: 900px) {
+  .containerContatos{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  .cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+}
+
+
+
+/*! Fim fale conosco*/
