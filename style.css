@@ -280,4 +280,37 @@ nav ul li:hover{
   text-align: center;
 }
 
+.textClientes{
+  width: 50%;
+  margin: auto;
+  padding-top: 2rem;
+
+}
+
+.textClientes p{
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.textClientes ul{
+  font-size: 1rem;
+  list-style: none;
+}
+
+.textClientes li::before{
+  content: "✔";
+  margin-right: .3rem;
+  color: #20a200;
+}
+
+@media only screen and (max-width: 900px) {
+  .textClientes{
+    width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+  
+  }
+}
+
 /*! Fim clientes  */
