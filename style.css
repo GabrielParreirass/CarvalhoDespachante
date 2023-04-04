@@ -491,4 +491,15 @@ nav ul li:hover {
 .containerDepoText{
   text-align: justify;
 }
+
+
+@media only screen and (max-width: 900px) {
+  .depoTop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
 /*! Fim depoimentos  */
