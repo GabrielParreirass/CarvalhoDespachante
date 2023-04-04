@@ -18,7 +18,7 @@ header {
 
 .logo {
   text-align: center;
-  padding-bottom: 1rem; 
+  padding-bottom: 1rem;
 }
 
 nav {
@@ -36,15 +36,15 @@ nav ul {
   align-items: center;
 }
 
-nav ul li{
-    transition: .3s;
-    cursor: pointer;
-    border: 1px solid #fff;
-    padding-bottom: 1rem;    
+nav ul li {
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding-bottom: 1rem;
 }
 
-nav ul li:hover{
-    border-bottom: 1px solid #005aaa;
+nav ul li:hover {
+  border-bottom: 1px solid #005aaa;
 }
 
 .wppHeader {
@@ -70,7 +70,7 @@ nav ul li:hover{
   display: none;
 }
 
-.menuMobile{
+.menuMobile {
   position: absolute;
   background-color: rgb(255, 255, 255);
   width: 100vw;
@@ -81,34 +81,31 @@ nav ul li:hover{
   padding: 2rem;
 }
 
-.hidden{
+.hidden {
   display: none;
-
 }
 
 .show {
   display: box;
-
 }
 
-.containerMenuMobile{
+.containerMenuMobile {
   display: flex;
   flex-direction: column;
 }
 
-
-.closeMobile{
+.closeMobile {
   margin-top: 1rem;
   margin-right: 1rem;
   text-align: right;
 }
 
-.listMobile{
+.listMobile {
   padding: 1rem;
   list-style: none;
 }
 
-.listMobile li{
+.listMobile li {
   margin-bottom: 1rem;
   font-size: 1.1rem;
 }
@@ -143,7 +140,7 @@ nav ul li:hover{
 
   .logo {
     text-align: center;
-    padding-bottom: 0rem; 
+    padding-bottom: 0rem;
     margin-bottom: 2rem;
   }
 }
@@ -168,33 +165,35 @@ nav ul li:hover{
 
   .logo {
     text-align: center;
-    padding-bottom: 0rem; 
+    padding-bottom: 0rem;
     margin-bottom: 0rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
   }
 
-  .logo img{
+  .logo img {
     width: 90%;
   }
 
-  .navMobile img{
+  .navMobile img {
     width: 90%;
   }
 }
 
 /*! Fim Header  */
 
-
 /** Começo Hero */
 
-.hero{
+.hero {
   background-color: #137edc;
   padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.titleHero{
+.titleHero {
   color: #fff;
   font-size: 2.5rem;
   font-weight: bold;
@@ -204,20 +203,20 @@ nav ul li:hover{
   margin-bottom: 2rem;
 }
 
-.textHero{
+.textHero {
   color: #000000;
   text-align: center;
-  width: 50%;
+  width: 70%;
   margin: auto;
   font-size: 1.3rem;
 }
 
-.containerButtonHero{
+.containerButtonHero {
   text-align: center;
   margin-top: 2rem;
 }
 
-.containerButtonHero button{
+.containerButtonHero button {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
@@ -232,12 +231,31 @@ nav ul li:hover{
   font-size: 1.1rem;
 }
 
-.containerButtonHero button:hover{
+.containerButtonHero button:hover {
   box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.333);
 }
 
+.containerTextHero {
+  width: 50%;
+}
+
+.containerImageHero {
+  width: 50%;
+  text-align: center;
+}
+
+.containerImageHero img {
+  height: 30rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .containerImageHero img {
+    height: 20rem;
+  }
+}
+
 @media only screen and (max-width: 900px) {
-  .titleHero{
+  .titleHero {
     color: #fff;
     font-size: 2.4rem;
     font-weight: bold;
@@ -247,78 +265,91 @@ nav ul li:hover{
     margin-bottom: 2rem;
   }
 
-  .textHero{
+  .textHero {
     color: #000000;
     text-align: center;
     width: 100%;
     margin: auto;
     font-size: 1.3rem;
   }
+
+  .hero{
+    flex-direction: column;
+  }
+
+  .containerTextHero {
+  width: 100%;
+}
+
+  .containerImageHero{
+    width: 100%;
+  }
+
+  .containerImageHero img {
+    height: 15rem;
+  }
 }
 
 /*! Fim Hero  */
 
-
 /** Começo clientes */
-.clientes{
+.clientes {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.titleClientes{
+.titleClientes {
   text-align: center;
   font-size: 2rem;
   text-transform: uppercase;
   color: #005aaa;
 }
 
-.containerMarquee{
+.containerMarquee {
   margin-top: 2rem;
 }
 
-.card{
+.card {
   text-align: center;
 }
 
-.textClientes{
+.textClientes {
   width: 50%;
   margin: auto;
   padding-top: 2rem;
-
 }
 
-.textClientes p{
+.textClientes p {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   text-align: justify;
 }
 
-.textClientes ul{
+.textClientes ul {
   font-size: 1.1rem;
   list-style: none;
 }
 
-.textClientes li::before{
+.textClientes li::before {
   content: "✔";
-  margin-right: .3rem;
+  margin-right: 0.3rem;
   color: #20a200;
 }
 
 @media only screen and (max-width: 900px) {
-  .textClientes{
+  .textClientes {
     width: 90%;
     margin: auto;
     padding-top: 2rem;
-  
   }
 
-  .textClientes p{
+  .textClientes p {
     font-size: 1.1rem;
     margin-bottom: 1rem;
     text-align: justify;
   }
-  
-  .textClientes ul{
+
+  .textClientes ul {
     font-size: 1rem;
     list-style: none;
   }
@@ -326,11 +357,9 @@ nav ul li:hover{
 
 /*! Fim clientes  */
 
-
-
 /** Começo fale consoco */
 
-.faleConosco{
+.faleConosco {
   margin-top: 1rem;
   background-color: #137edc;
   border-top-right-radius: 10px;
@@ -338,29 +367,26 @@ nav ul li:hover{
   padding: 1rem;
 }
 
-.titleFaleConosco{
+.titleFaleConosco {
   text-align: center;
   font-size: 2rem;
   text-transform: uppercase;
   color: #ffffff;
 }
 
-.containerContatos{
+.containerContatos {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
-.containerContatos img{
+.containerContatos img {
   height: 2rem;
   width: 2rem;
 }
 
-
-
-.cont{
+.cont {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -368,34 +394,32 @@ nav ul li:hover{
   width: 33%;
 }
 
-.cont p{
+.cont p {
   margin-top: 1rem;
 }
 
-.containerMaps{
+.containerMaps {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.wrapper-maps{
+.wrapper-maps {
   border-radius: 10px;
   box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.521);
 }
 
-
 @media only screen and (max-width: 900px) {
-  .containerContatos{
+  .containerContatos {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
   }
 
-  .cont{
+  .cont {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -403,9 +427,6 @@ nav ul li:hover{
     width: 100%;
     margin-bottom: 2rem;
   }
-
 }
-
-
 
 /*! Fim fale conosco*/
