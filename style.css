@@ -273,15 +273,15 @@ nav ul li:hover {
     font-size: 1.3rem;
   }
 
-  .hero{
+  .hero {
     flex-direction: column;
   }
 
   .containerTextHero {
-  width: 100%;
-}
+    width: 100%;
+  }
 
-  .containerImageHero{
+  .containerImageHero {
     width: 100%;
   }
 
@@ -294,7 +294,7 @@ nav ul li:hover {
 
 /** Começo clientes */
 .clientes {
-  padding-top: 2rem;
+  padding-top: 4rem;
   padding-bottom: 2rem;
 }
 
@@ -357,76 +357,133 @@ nav ul li:hover {
 
 /*! Fim clientes  */
 
-/** Começo fale consoco */
+/** Começo servicos */
 
-.faleConosco {
-  margin-top: 1rem;
-  background-color: #137edc;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+.servicos {
   padding: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-.titleFaleConosco {
+.titleServicos {
   text-align: center;
   font-size: 2rem;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #005aaa;
 }
 
-.containerContatos {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.containerContatos img {
-  height: 2rem;
-  width: 2rem;
-}
-
-.cont {
+.containerServicos {
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 33%;
+  align-items: center;
 }
 
-.cont p {
+.servicos p {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.servicos ul {
+  list-style: none;
+  padding: 1rem;
+  margin: auto;
+}
+
+.servicos li {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.servicos li:before {
+  content: "✔";
+  margin-right: 10px;
+}
+
+.vejaServicos {
   margin-top: 1rem;
+  color: #005aaa;
+  cursor: pointer;
 }
 
-.containerMaps {
-  margin-top: 2rem;
+/*! Fim servicos  */
+
+.containerMidleButton{
+  text-align: center;
+}
+
+.containerMidleButton button{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #005aaa;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #005aaa;
+  transition: 0.3s;
+  font-size: 1.1rem;
+}
+
+.containerMidleButton button:hover{
+  background-color: #fff;
+  color: #005aaa;
+}
+
+
+/** Começo depoimentos  */
+
+.depoimentos{
+  padding: 1rem;
+  margin-top: 3rem;
+  padding-left: 0;
+  padding-right: 0;
+
+  margin-bottom: 1rem;
+}
+
+.titleDepoimentos{
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #005aaa;
+}
+
+.swiper {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.DepoCard{
+  background: #f7f7f7;
+  box-shadow: 0 8px 32px 0 rgba(48, 48, 48, 0.37);
+  backdrop-filter: blur( 13.5px );
+  -webkit-backdrop-filter: blur( 13.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem;
+  flex-direction: column;
 }
 
-.wrapper-maps {
-  border-radius: 10px;
-  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.521);
+.authorName{
+  font-weight: bold;
 }
 
-@media only screen and (max-width: 900px) {
-  .containerContatos {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .cont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 2rem;
-  }
+.depoTop{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 1rem;
 }
 
-/*! Fim fale conosco*/
+/*! Fim depoimentos  */
