@@ -282,7 +282,9 @@ nav ul li:hover {
   }
 
   .containerImageHero {
+    padding: 0;
     width: 100%;
+    text-align: center;
   }
 
   .containerImageHero img {
@@ -486,4 +488,7 @@ nav ul li:hover {
   margin-bottom: 1rem;
 }
 
+.containerDepoText{
+  text-align: justify;
+}
 /*! Fim depoimentos  */
