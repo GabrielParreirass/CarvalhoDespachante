@@ -186,7 +186,7 @@ nav ul li:hover {
 /** Começo Hero */
 
 .hero {
-  background-color: #137edc;
+  background-color: #005aaa;
   padding: 3rem;
   display: flex;
   justify-content: center;
@@ -221,8 +221,8 @@ nav ul li:hover {
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  background-color: #005aaa;
-  color: #fff;
+  background-color: #FDFF04;
+  color: #000000;
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
@@ -470,10 +470,11 @@ nav ul li:hover {
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 2rem;
   flex-direction: column;
+  height: 17rem;
 }
 
 .authorName{
@@ -500,6 +501,21 @@ nav ul li:hover {
     align-items: center;
     width: 100%;
     margin-bottom: 1rem;
+  }
+
+  .DepoCard{
+    background: #f7f7f7;
+    box-shadow: 0 8px 32px 0 rgba(48, 48, 48, 0.37);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    flex-direction: column;
+    height: 25rem;
   }
 }
 /*! Fim depoimentos  */
