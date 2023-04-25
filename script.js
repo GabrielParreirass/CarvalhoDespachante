@@ -12,7 +12,7 @@ function handleClickMobile() {
 function handleCloseMobile() {
     const menuMobile = document.getElementById("menuMobile")
 
-
+ 
     menuMobile.classList.toggle("hidden")
     menuMobile.classList.toggle("show")
 }
