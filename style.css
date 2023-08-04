@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
- 
+  font-family: "Cabin", sans-serif;
 }
 
 /** Começo Header  */
@@ -14,16 +13,19 @@ header {
   display: flex;
   justify-content: space-around;
   padding: 2rem;
-  position: relative;
+
   overflow-x: hidden;
+  align-items: center;
 }
 
 .logo {
   text-align: center;
-  padding-bottom: 1rem;
+
+  width: 33%;
 }
 
 nav {
+  width: 77%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -42,7 +44,7 @@ nav ul li {
   transition: 0.3s;
   cursor: pointer;
   border: 1px solid #fff;
-  padding-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 nav ul li:hover {
@@ -52,8 +54,8 @@ nav ul li:hover {
 .wppHeader {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background-color: #005aaa;
   color: #fff;
   border-radius: 10px;
@@ -136,15 +138,37 @@ nav ul li:hover {
 @media only screen and (max-width: 1440px) {
   header {
     display: flex;
-    justify-content: space-around;
-    padding: 2rem;
-    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    flex-direction: flex;
   }
 
   .logo {
     text-align: center;
     padding-bottom: 0rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  .logo img {
+    width: 80%;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav {
+    width: 77%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1rem;
   }
 }
 
@@ -173,6 +197,7 @@ nav ul li:hover {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: auto;
   }
 
   .logo img {
@@ -189,7 +214,7 @@ nav ul li:hover {
 /** Começo Hero */
 
 .hero {
-  background-color: #005aaa;
+  background-color: #4c88b9;
   padding: 3rem;
   display: flex;
   justify-content: center;
@@ -199,16 +224,16 @@ nav ul li:hover {
 
 .titleHero {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-weight: bold;
-  width: 90%;
+  width: 100%;
   text-align: center;
   margin: auto;
   margin-bottom: 2rem;
 }
 
 .textHero {
-  color: #fff;
+  color: #dddddd;
   text-align: center;
   width: 70%;
   margin: auto;
@@ -225,12 +250,12 @@ nav ul li:hover {
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  background-color: #FDFF04;
+  background-color: #fdff04;
   color: #000000;
   border-radius: 10px;
   font-weight: bold;
   cursor: pointer;
-  border: 1px solid #005aaa;
+  border: 1px solid #4c88b9;
   transition: 0.3s;
   font-size: 1.1rem;
 }
@@ -307,7 +332,7 @@ nav ul li:hover {
 
 .titleClientes {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.4rem;
   text-transform: uppercase;
   color: #005aaa;
 }
@@ -321,19 +346,19 @@ nav ul li:hover {
 }
 
 .textClientes {
-  width: 50%;
+  width: 50vw;
   margin: auto;
   padding-top: 2rem;
 }
 
 .textClientes p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: justify;
 }
 
 .textClientes ul {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   list-style: none;
 }
 
@@ -345,20 +370,25 @@ nav ul li:hover {
 
 @media only screen and (max-width: 900px) {
   .textClientes {
-    width: 90%;
+    width: 90vw;
     margin: auto;
     padding-top: 2rem;
   }
 
+  .textClientes ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
   .textClientes p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
     text-align: justify;
   }
 
-  .textClientes ul {
-    font-size: 1rem;
-    list-style: none;
+  .textClientes li {
+    font-size: 1.3rem;
   }
 }
 
@@ -367,62 +397,101 @@ nav ul li:hover {
 /** Começo servicos */
 
 .servicos {
-  padding: 1rem;
-  margin-top: 2rem;
-  text-align: center;
-  margin-bottom: 3rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
   overflow-x: hidden;
 }
 
 .titleServicos {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.4rem;
   text-transform: uppercase;
   color: #005aaa;
 }
 
-.containerServicos {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.servicos p {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-
-.servicos ul {
-  list-style: none;
-  padding: 1rem;
+.textServicos {
+  width: 50vw;
   margin: auto;
+  padding-top: 2rem;
 }
 
-.servicos li {
-  text-align: left;
-  font-size: 1.2rem;
+.textServicos p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: justify;
 }
 
-.servicos li:before {
+.textServicos ul {
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+.textServicos li::before {
   content: "✔";
-  margin-right: 10px;
+  margin-right: 0.3rem;
+  color: #20a200;
 }
 
 .vejaServicos {
-  margin-top: 1rem;
-  color: #005aaa;
+  color: #4c88b9;
   cursor: pointer;
+  font-size: 1.3rem;
+  text-decoration: underline;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .textServicos {
+    width: 90vw;
+    margin: auto;
+    padding-top: 2rem;
+  }
+
+  .textServicos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .textServicos p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+
+  .textServicos li {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .textServicos {
+    width: 90vw;
+    margin: auto;
+    padding-top: 2rem;
+  }
+  .textServicos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .servicos li {
+    text-align: left;
+    font-size: 1.3rem;
+  }
 }
 
 /*! Fim servicos  */
 
-.containerMidleButton{
+.containerMidleButton {
   text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
-.containerMidleButton button{
+.containerMidleButton button {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
@@ -431,191 +500,192 @@ nav ul li:hover {
   color: #fff;
   border-radius: 10px;
   font-weight: bold;
+  font-size: 1.5rem;
   cursor: pointer;
   border: 1px solid #005aaa;
   transition: 0.3s;
-  font-size: 1.1rem;
 }
 
-.containerMidleButton button:hover{
+.containerMidleButton button:hover {
   background-color: #fff;
   color: #005aaa;
 }
 
+/** Começo Perguntas */
 
-/** Começo depoimentos  */
-
-.depoimentos{
-  padding: 1rem;
-  margin-top: 3rem;
-  padding-left: 0;
-  padding-right: 0;
-
-  margin-bottom: 1rem;
-
-
+.perguntas {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding-bottom: 3em;
 }
 
-.titleDepoimentos{
+.perguntas h3 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.4rem;
   text-transform: uppercase;
   color: #005aaa;
+  font-weight: lighter;
 }
 
-.swiper {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  padding-right: 3rem;
-  padding-left: 3rem;
-}
-
-.DepoCard{
-  background: #f7f7f7;
-  box-shadow: 0 8px 32px 0 rgba(48, 48, 48, 0.37);
-  backdrop-filter: blur( 13.5px );
-  -webkit-backdrop-filter: blur( 13.5px );
-  border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.containerPerguntas {
   padding: 2rem;
-  flex-direction: column;
-  height: 17rem;
+  width: 70vw;
 }
 
-.authorName{
+.titlePergunta {
+  font-size: 1.5em;
   font-weight: bold;
+
+  width: 90%;
 }
 
-.depoTop{
+.arrow {
+  transition: 0.5s;
+
+  width: 10%;
+  text-align: center;
+}
+
+.wrapperPergunta {
+  border-bottom: 1px solid #111827;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 50%;
-  margin-bottom: 1rem;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
 }
 
-.containerDepoText{
-  text-align: justify;
+.pergunta {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hiddenResposta {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.3em;
+}
+
+.toggleHiddenResposta {
+  display: none;
+}
+
+.rotated {
+  transform: rotate(180deg);
+}
+
+.disrotated {
+  transform: rotate(0deg);
 }
 
 
 @media only screen and (max-width: 900px) {
-  .depoTop{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 1rem;
+  .containerPerguntas {
+    padding: 2rem;
+    width: 100vw;
   }
 
-  .DepoCard{
-    background: #f7f7f7;
-    box-shadow: 0 8px 32px 0 rgba(48, 48, 48, 0.37);
-    backdrop-filter: blur( 13.5px );
-    -webkit-backdrop-filter: blur( 13.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 2rem;
-    flex-direction: column;
-    height: 25rem;
+  .titlePergunta {
+    font-size: 1.4em;
+    font-weight: bold;
+  
+    width: 90%;
   }
 }
-/*! Fim depoimentos  */
+
+/*! Fim perguntas  */
 
 /** Começo Footer  */
 
-footer{
+footer {
   background-color: #005aaa;
   padding: 2rem;
   overflow-x: hidden;
 }
 
-.containerTopFooter{
+.containerTopFooter {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
-  margin: auto;
-  gap: 3rem;
+
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
-.containerTopFooter div{
+.containerTopFooter div {
   cursor: pointer;
 }
 
-.containerMidleFooter{
+.containerMidleFooter {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
-  margin: auto;
   gap: 3rem;
   color: #fff;
- 
 }
 
-.containerBottomFooter{
+.containerBottomFooter {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
-  margin: auto;
+
   gap: 3rem;
   color: #fff;
   margin-top: 3rem;
+  font-size: 1.2rem;
 }
 
-.telefone{
+.telefone {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: .3rem;
+  gap: 0.3rem;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
 }
 
-.email{
+.socialIcons img{
+  width: 30px;
+  height: 30px;
+}
+
+.cep{
+  font-size: 1.2rem;
+}
+
+
+.addres {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: .3rem;
+  gap: 0.3rem;
 }
 
-.email img{
-  height: 1.5rem;
-}
-
-.addres{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: .3rem;
-}
-
-.addres img{
+.addres img {
   height: 1.7rem;
 }
 
-
-
-.containerMap{
+.containerMap {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.wrapper-maps{
+.wrapper-maps {
   border-radius: 10px;
   box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.322);
 }
 
 @media only screen and (max-width: 900px) {
-  .containerMidleFooter{
+  .containerMidleFooter {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -624,11 +694,7 @@ footer{
     margin: auto;
     gap: 3rem;
     color: #fff;
-   
   }
-  
 }
-
-
 
 /*! Fim Footer  */
