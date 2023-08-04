@@ -520,7 +520,7 @@ nav ul li:hover {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  padding-bottom: 3em;
+  padding-bottom: 0em;
 }
 
 .perguntas h3 {
