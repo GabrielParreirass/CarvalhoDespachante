@@ -1,0 +1,84 @@
+.servicos2 {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  overflow-x: hidden;
+}
+
+.titleServicos2 {
+  text-align: center;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  color: #005aaa;
+}
+
+.textServicos2 {
+  width: 80vw;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.textServicos2 p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.textServicos2 ul {
+  font-size: 1.2rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.textServicos2 li::before {
+  content: "✔";
+  margin-right: 0.3rem;
+  color: #20a200;
+}
+
+@media only screen and (max-width: 900px) {
+  .textServicos2 {
+    width: 90vw;
+    margin: auto;
+    padding-top: 2rem;
+  }
+
+  .textServicos2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .textServicos2 p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    text-align: justify;
+  }
+
+  .textServicos2 li {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .textServicos2 {
+    width: 90vw;
+    margin: auto;
+    padding-top: 2rem;
+  }
+  .textServicos2 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .servicos2 li {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+}

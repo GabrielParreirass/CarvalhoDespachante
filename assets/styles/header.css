@@ -1,0 +1,210 @@
+/** Começo Header  */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+  
+    overflow-x: hidden;
+    align-items: center;
+    box-shadow: 1px 10px 10px 10px rgba(118, 118, 118, 0.149);
+  }
+  
+  .logo {
+    text-align: center;
+  
+    width: 33%;
+  }
+  
+  nav {
+    width: 77%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav a{
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul li {
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #fff;
+    font-size: 1.3rem;
+    
+  }
+  
+  nav ul li:hover {
+    border-bottom: 1px solid #005aaa;
+  }
+  
+  .wppHeader {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #005aaa;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #005aaa;
+    transition: 0.3s;
+  }
+  
+  .wppHeader:hover {
+    background-color: #fff;
+    color: #005aaa;
+  }
+  
+  .navMobile {
+    display: none;
+  }
+  
+  .menuMobile {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    top: 0;
+    animation: 1s ease-in;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2rem;
+    z-index: 999;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .show {
+    display: box;
+  }
+  
+  .containerMenuMobile {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .closeMobile {
+    margin-top: 1rem;
+    margin-right: 1rem;
+    text-align: right;
+  }
+  
+  .listMobile {
+    padding: 1rem;
+    list-style: none;
+  }
+  
+  .listMobile li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .wppHeaderMobile {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #005aaa;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #005aaa;
+    transition: 0.3s;
+    text-align: center;
+  }
+  
+  .wppHeaderMobile:hover {
+    background-color: #fff;
+    color: #005aaa;
+  }
+  
+  @media only screen and (max-width: 1440px) {
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+      flex-direction: flex;
+    }
+  
+    .logo {
+      text-align: center;
+      padding-bottom: 0rem;
+      margin-bottom: 0rem;
+    }
+  
+    .logo img {
+      width: 80%;
+    }
+  
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    nav {
+      width: 77%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 900px) {
+    nav {
+      display: none;
+    }
+  
+    header {
+      display: flex;
+      justify-content: space-around;
+      padding: 2rem;
+      flex-direction: row;
+    }
+  
+    .navMobile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .logo {
+      text-align: center;
+      padding-bottom: 0rem;
+      margin-bottom: 0rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: auto;
+    }
+  
+    .logo img {
+      width: 90%;
+    }
+  
+    .navMobile img {
+      width: 90%;
+    }
+  }
+  
+  /*! Fim Header  */
