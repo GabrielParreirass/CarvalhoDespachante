@@ -25,6 +25,7 @@ html{
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
+  background-attachment: fixed;
 }
 
 .titleHero {
@@ -108,8 +109,20 @@ html{
   }
 
   .hero {
+    /* background-color: #4c88b9; */
+    background-image: url(../../assets/imgs/bg-blue2-mobile.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
     flex-direction: column;
   }
+
 
   .containerTextHero {
     width: 100%;
@@ -509,3 +522,25 @@ footer {
 }
 
 /*! Fim Footer  */
+
+
+.wppIcon{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.wppIcon img{
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 900px) {
+  .wppIcon{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+  }
+}
