@@ -1,3 +1,7 @@
+*{
+    overflow-x: hidden;
+}
+
 .containerIPVA{
     width: 80vw;
     margin: auto;

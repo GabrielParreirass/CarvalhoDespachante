@@ -21,3 +21,19 @@
     margin-bottom: .2rem;
     text-align: justify;
 }
+
+
+@media only screen and (max-width: 900px) {
+    .textAbout p{
+        text-indent: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: justify;
+    }
+
+    .containerAbout{
+        width: 90vw;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+  }
