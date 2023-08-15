@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços Carvalho Despachante</title>
+    <link rel="stylesheet" href="../../assets/styles/header.css">
+    <link rel="stylesheet" href="../../assets/styles/pagamento.css">
+    <link rel="stylesheet" href="../../assets/styles/style.css">
+    <link rel="shortcut icon" href="../../assets/icons/favicon.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href="../../index.html"><img src="../../assets/imgs/logotipo-carvalho-despachante.png" alt=""></a>
+        </div>
+
+        <nav>
+            <ul>
+                <a href="../sobre/index.html">
+                    <li>Sobre nós</li>
+                </a>
+                <a href="../../pages/calculeIpva/index.html">
+                    <li>Calcule seu IPVA</li>
+                </a>
+                <a href="../../pages/servicos/index.html">
+                    <li>Serviços</li>
+                </a>
+
+                <li>Pagamento</li>
+
+                <a href="#footer">
+                    <li>Contato</li>
+                </a>
+                <li class="wppHeader">Faça um orçamento!</li>
+            </ul>
+        </nav>
+
+        <div class="navMobile" onClick="handleClickMobile()">
+            <img src="../../assets/imgs/icons8-menu-rounded-50.png" alt="">
+        </div>
+
+        <div class="menuMobile hidden" id="menuMobile">
+            <div class="containerMenuMobile">
+                <div class="closeMobile">
+                    <img src="../../assets/imgs/close.png" alt="" onClick="handleCloseMobile()">
+                </div>
+                <ul class="listMobile">
+                    <a href="../sobre/index.html">
+                        <li>Sobre nós</li>
+                    </a>
+                    <a href="../../pages/calculeIpva/index.html">
+                        <li>Calcule seu IPVA</li>
+                    </a>
+                    <a href="../../pages/servicos/index.html">
+                        <li>Serviços</li>
+                    </a>
+                    <a href="#footer" onClick="handleCloseMobile()">
+                        <li>Contato</li>
+                    </a>
+                    <li>Pagamento</li>
+                    <li class="wppHeaderMobile">Faça um orçamento!</li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+
+    <section class="containerPagamento">
+        <div class="textPagamento"> Aceitamos pagamentos via debito em conta, cartão de crédito, depósito bancário, PIX e dinheiro. Parcelamos
+            em até 18x suas dividas.</div>
+            <a href="#">Consulte condições.</a>
+    </section>
+
+
+
+    <div class="containerMidleButton">
+        <button>Fale conosco</button>
+    </div>
+
+
+    <div class="wppIcon">
+        <img src="../../assets/icons/wppIcon.svg" alt="">
+    </div>
+
+    <footer id="footer">
+        <div class="containerTopFooter">
+
+            <div class="socialIcons">
+                <img src="../../assets/icons/logo-insta.png" alt="">
+            </div>
+            <div class="socialIcons">
+                <img src="../../assets/icons/icons8-facebook-50.png" alt="">
+            </div>
+            <div class="socialIcons">
+                <img src="../../assets/icons/logo-linkedin.png" alt="">
+            </div>
+            <div class="socialIcons">
+                <img src="../../assets/icons/logo-twitter.png" alt="">
+            </div>
+            <div class="socialIcons">
+                <img src="../../assets/icons/logo-google.png" alt="">
+            </div>
+
+
+        </div>
+
+        <div class="containerMidleFooter">
+            <div class="telefone">
+                <img src="../../assets/icons/Whatssap.svg" alt="">
+                /
+                <img src="../../assets/icons/telefone.svg" alt="">
+                <p>31 3371-7822</p>
+            </div>
+
+
+        </div>
+
+        <div class="containerBottomFooter">
+            <div class="addres">
+                <div class="topAddress">
+                    <img src="../../assets/icons/mapa.svg" alt="">
+                    <p>Rua Miguel Gentil, 480 - 2º andar - Gameleira, Belo Horizonte - MG / CEP: 30510-140</p>
+                </div>
+                <p class="bottomAddress">Sede própria com estacionamento.</p>
+            </div>
+        </div>
+
+        <div class="containerMap">
+            <div style="overflow:hidden;resize:none;max-width:100%;width:700px;height:400px;" class="wrapper-maps">
+                <div id="canvas-for-googlemap" style="height:100%; width:100%;max-width:100%;"><iframe
+                        style="height:100%;width:100%;border:0;" frameborder="0"
+                        src="https://www.google.com/maps/embed/v1/place?q=Carvalho+Despachante,+Em+Frente+ao+DETRAN+de+BH+-+Rua+Miguel+Gentil+-+Gameleira,+Belo+Horizonte+-+MG,+Brasil&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                </div><a class="google-maps-html" rel="nofollow" href="https://www.bootstrapskins.com/themes"
+                    id="auth-map-data">premium bootstrap themes</a>
+                <style>
+                    #canvas-for-googlemap img {
+                        max-width: none !important;
+                        background: none !important;
+                        font-size: inherit;
+                        font-weight: inherit;
+                    }
+                </style>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../../script.js"></script>
+
+
+</body>
+
+</html>

@@ -25,6 +25,19 @@ html {
   align-items: center;
   overflow-x: hidden;
   background-attachment: fixed;
+  position: relative;
+}
+
+.selo{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.selo img{
+  width: 150px;
+  height: 150px;
+  rotate: 15deg;
 }
 
 .titleHero {
@@ -98,6 +111,18 @@ html {
     text-align: center;
     margin: auto;
     margin-bottom: 2rem;
+  }
+
+  .selo{
+    position: absolute;
+    right: 10px;
+    top: auto;
+    bottom: 10px;
+  }
+
+  .selo img{
+    height: 100px;
+    width: 100px;
   }
 
   .textHero {
