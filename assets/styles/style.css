@@ -30,7 +30,7 @@ html {
 
 .selo{
   position: absolute;
-  right: 10px;
+  right: 65px;
   top: 10px;
 }
 
@@ -55,7 +55,7 @@ html {
   text-align: center;
   width: 70%;
   margin: auto;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-weight: bold;
 }
 
@@ -76,7 +76,8 @@ html {
   cursor: pointer;
   border: 1px solid #4c88b9;
   transition: 0.3s;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 .containerButtonHero button:hover {
@@ -88,7 +89,7 @@ html {
 }
 
 .containerImageHero {
-  width: 50%;
+  width: 60%;
   text-align: center;
 }
 

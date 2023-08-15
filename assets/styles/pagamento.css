@@ -26,3 +26,16 @@
     height: 50rem;
     width: 50rem;
 }
+
+@media only screen and (max-width: 900px) {
+
+    .textPagamento{
+        font-size: 1.7rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+    .artePagamento img{
+        height: 22rem;
+        width: 22rem;
+    }
+}

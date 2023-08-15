@@ -41,6 +41,13 @@
   color: #20a200;
 }
 
+.consulteWpp{
+  color: #4c88b9;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 900px) {
   .textServicos2 {
     width: 90vw;

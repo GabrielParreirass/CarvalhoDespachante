@@ -3,6 +3,7 @@
 header {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 2rem;
   
     overflow-x: hidden;
@@ -13,11 +14,15 @@ header {
   .logo {
     text-align: center;
   
-    width: 33%;
+   
+  }
+
+  .logo img{
+    width: 500px;
   }
   
   nav {
-    width: 77%;
+    
     text-align: center;
     display: flex;
     justify-content: center;
@@ -42,6 +47,8 @@ header {
     cursor: pointer;
     border: 1px solid #fff;
     font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: bolder;
     
   }
   
@@ -61,6 +68,10 @@ header {
     cursor: pointer;
     border: 1px solid #005aaa;
     transition: 0.3s;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+    
   }
   
   .wppHeader:hover {
@@ -136,6 +147,15 @@ header {
   .wppHeaderMobile:hover {
     background-color: #fff;
     color: #005aaa;
+  }
+
+  .header2{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: .1rem;
+    gap: 1rem;
   }
   
   @media only screen and (max-width: 1440px) {
