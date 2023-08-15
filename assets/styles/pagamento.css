@@ -16,3 +16,13 @@
     text-decoration: underline;
     
 }
+
+
+.artePagamento{
+    margin-top: 2rem;
+}
+
+.artePagamento img{
+    height: 50rem;
+    width: 50rem;
+}
