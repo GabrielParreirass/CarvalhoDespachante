@@ -5,46 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serviços Carvalho Despachante</title>
-    <link rel="stylesheet" href="../assets/styles/header.css">
-    <link rel="stylesheet" href="../assets/styles/servicos.css">
-    <link rel="stylesheet" href="../assets/styles/style.css">
-    <link rel="shortcut icon" href="../assets/icons/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/styles/header.css">
+    <link rel="stylesheet" href="../../assets/styles/servicos.css">
+    <link rel="stylesheet" href="../../assets/styles/style.css">
+    <link rel="shortcut icon" href="../../assets/icons/favicon.jpg" type="image/x-icon">
 </head>
 <body>
 
     <header>
 
         <div class="logo">
-            <a href="../index.html"><img src="../assets/imgs/logotipo-carvalho-despachante.png" alt=""></a>
+            <a href="/"><img src="../../assets/imgs/logotipo-carvalho-despachante.png" alt=""></a>
         </div>
 
         <nav>
             <ul>
-                <li>Cálculo IPVA 0km</li>
-                <a href="../pages/servicos.html">
+                <a href="../../pages/sobre/">
+                    <li>Sobre nós</li>
+                </a>
+                <a href="../../pages/calculeIpva/">
+                    <li>Calcule seu IPVA</li>
+                </a>
+                <a href="../../pages/servicos">
                     <li>Serviços</li>
                 </a>
-          
+                
+                <li>Pagamento</li>
+
                 <a href="#footer">
                     <li>Contato</li>
                 </a>
-                <li>Pagamento</li>
                 <li class="wppHeader">Faça um orçamento!</li>
             </ul>
         </nav>
 
         <div class="navMobile" onClick="handleClickMobile()">
-            <img src="../assets/imgs/icons8-menu-rounded-50.png" alt="">
+            <img src="../../assets/imgs/icons8-menu-rounded-50.png" alt="">
         </div>
 
         <div class="menuMobile hidden" id="menuMobile">
             <div class="containerMenuMobile">
                 <div class="closeMobile">
-                    <img src="../assets/imgs/close.png" alt="" onClick="handleCloseMobile()">
+                    <img src="../../assets/imgs/close.png" alt="" onClick="handleCloseMobile()">
                 </div>
                 <ul class="listMobile">
                     <li>Cálculo IPVA 0km</li>
-                    <a href="../pages/servicos.html">
+                    <a href="../../pages/servicos.html">
                         <li>Serviços</li>
                     </a>
                     <a href="#footer" onClick="handleCloseMobile()">
@@ -110,23 +116,27 @@
 
     </section>
 
+    <div class="wppIcon">
+        <img src="../../assets/icons/wppIcon.svg" alt="">
+    </div>
+
     <footer id="footer">
         <div class="containerTopFooter">
 
             <div class="socialIcons">
-                <img src="../assets/icons/logo-insta.png" alt="">
+                <img src="../../assets/icons/logo-insta.png" alt="">
             </div>
             <div class="socialIcons">
-                <img src="../assets/icons/icons8-facebook-50.png" alt="">
+                <img src="../../assets/icons/icons8-facebook-50.png" alt="">
             </div>
             <div class="socialIcons">
-                <img src="../assets/icons/logo-linkedin.png" alt="">
+                <img src="../../assets/icons/logo-linkedin.png" alt="">
             </div>
             <div class="socialIcons">
-                <img src="../assets/icons/logo-twitter.png" alt="">
+                <img src="../../assets/icons/logo-twitter.png" alt="">
             </div>
             <div class="socialIcons">
-                <img src="../assets/icons/logo-google.png" alt="">
+                <img src="../../assets/icons/logo-google.png" alt="">
             </div>
 
 
@@ -134,9 +144,9 @@
 
         <div class="containerMidleFooter">
             <div class="telefone">
-                <img src="../assets/icons/Whatssap.svg" alt="">
+                <img src="../../assets/icons/Whatssap.svg" alt="">
                 /
-                <img src="../assets/icons/telefone.svg" alt="">
+                <img src="../../assets/icons/telefone.svg" alt="">
                 <p>31 3371-7822</p>
             </div>
 
@@ -145,8 +155,11 @@
 
         <div class="containerBottomFooter">
             <div class="addres">
-                <img src="../assets/icons/mapa.svg" alt="">
-                <p>Rua Miguel Gentil, 480 - Gameleira, Belo Horizonte - MG / CEP: 30510-140</p>
+                <div class="topAddress">
+                    <img src="../../assets/icons/mapa.svg" alt="">
+                    <p>Rua Miguel Gentil, 480 - 2º andar - Gameleira, Belo Horizonte - MG / CEP: 30510-140</p>
+                </div>
+                <p class="bottomAddress">Sede própria com estacionamento.</p>
             </div>
         </div>
 
@@ -171,7 +184,7 @@
 
 
 
-    <script src="../script.js"></script>
+    <script src="../../script.js"></script>
 
     
 </body>

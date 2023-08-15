@@ -7,10 +7,9 @@
   font-family: "Cabin", sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
-
 
 /** Começo Hero */
 
@@ -44,6 +43,7 @@ html{
   width: 70%;
   margin: auto;
   font-size: 1.3rem;
+  font-weight: bold;
 }
 
 .containerButtonHero {
@@ -114,7 +114,7 @@ html{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-  
+
     padding: 3rem;
     display: flex;
     justify-content: center;
@@ -122,7 +122,6 @@ html{
     overflow-x: hidden;
     flex-direction: column;
   }
-
 
   .containerTextHero {
     width: 100%;
@@ -181,7 +180,7 @@ html{
 }
 
 .textClientes li::before {
-  content: "✔";
+  content: "•";
   margin-right: 0.3rem;
   color: #20a200;
 }
@@ -245,25 +244,22 @@ html{
 }
 
 .textServicos li::before {
-  content: "✔";
+  content: "•";
   margin-right: 0.3rem;
   color: #20a200;
 }
 
-.vejaServicos{
+.vejaServicos {
   margin-top: 1.5rem;
   text-align: center;
 }
 
-.vejaServicos a{
+.vejaServicos a {
   color: #4c88b9;
   cursor: pointer;
   font-size: 1.3rem;
   text-decoration: underline;
-  
 }
-
-
 
 @media only screen and (max-width: 900px) {
   .textServicos {
@@ -369,7 +365,7 @@ html{
 
 .arrow {
   transition: 0.5s;
-
+  cursor: pointer;
   width: 10%;
   text-align: center;
 }
@@ -409,7 +405,6 @@ html{
   transform: rotate(0deg);
 }
 
-
 @media only screen and (max-width: 900px) {
   .containerPerguntas {
     padding: 2rem;
@@ -419,7 +414,7 @@ html{
   .titlePergunta {
     font-size: 1.4em;
     font-weight: bold;
-  
+
     width: 90%;
   }
 }
@@ -475,21 +470,29 @@ footer {
   margin-top: 1.5rem;
 }
 
-.socialIcons img{
+.socialIcons img {
   width: 30px;
   height: 30px;
 }
 
-.cep{
+.cep {
   font-size: 1.2rem;
 }
-
 
 .addres {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.3rem;
+  flex-direction: column;
+}
+
+.topAddress {
+  display: flex;
+}
+
+.bottomAddress {
+  font-weight: bold;
 }
 
 .addres img {
@@ -523,22 +526,20 @@ footer {
 
 /*! Fim Footer  */
 
-
-.wppIcon{
+.wppIcon {
   position: fixed;
   bottom: 20px;
   right: 20px;
 }
 
-.wppIcon img{
+.wppIcon img {
   width: 100px;
   height: 100px;
   cursor: pointer;
 }
 
-
 @media only screen and (max-width: 900px) {
-  .wppIcon{
+  .wppIcon {
     position: fixed;
     bottom: 5px;
     right: 5px;

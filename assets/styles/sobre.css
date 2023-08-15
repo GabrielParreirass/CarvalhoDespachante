@@ -1,0 +1,23 @@
+.containerAbout{
+    width: 80vw;
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+.titleAbout{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #0169c4;
+}
+
+.textAbout{
+    font-size: 1.5rem;
+}
+
+.textAbout p{
+    text-indent: 3rem;
+    margin-bottom: .2rem;
+    text-align: justify;
+}

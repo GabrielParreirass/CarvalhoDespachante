@@ -1,0 +1,43 @@
+.containerIPVA{
+    width: 80vw;
+    margin: auto;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+.titleIPVA{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #0169c4;
+}
+
+
+.containerIPVA p{
+    font-size: 1.4rem;
+}
+
+.containerIPVA ul{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    list-style: none;
+    font-weight: bold;
+}
+
+.containerIPVA li{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.textLink{
+    text-decoration: underline;
+}
+
+.titleLink{
+    margin-top: 1rem;
+}
+
+.containerIPVA a{
+    font-size: 1.3rem;
+}
