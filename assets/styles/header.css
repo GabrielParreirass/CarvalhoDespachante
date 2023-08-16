@@ -8,25 +8,28 @@ header {
   
     overflow-x: hidden;
     align-items: center;
-    box-shadow: 1px 10px 10px 10px rgba(118, 118, 118, 0.149);
+    
   }
   
   .logo {
     text-align: center;
-  
-   
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .logo img{
-    width: 500px;
+    width: 400px;
   }
   
   nav {
-    
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
   }
   
   nav a{
@@ -46,7 +49,7 @@ header {
     transition: 0.3s;
     cursor: pointer;
     border: 1px solid #fff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: bolder;
     
@@ -55,8 +58,18 @@ header {
   nav ul li:hover {
     border-bottom: 1px solid #005aaa;
   }
+
+
   
   .wppHeader {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .wppHeader button{
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
@@ -68,10 +81,8 @@ header {
     cursor: pointer;
     border: 1px solid #005aaa;
     transition: 0.3s;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
-
-    
   }
   
   .wppHeader:hover {
@@ -156,16 +167,12 @@ header {
     align-items: center;
     padding-bottom: .1rem;
     gap: 1rem;
+    box-shadow: 1px 10px 10px -2px rgba(118, 118, 118, 0.149);
   }
-  
-  @media only screen and (max-width: 1440px) {
+
+  @media only screen and (max-width: 1600px) {
     header {
-      display: flex;
-      justify-content: space-between;
-      padding: 0;
-      padding-bottom: 2rem;
-      padding-top: 2rem;
-      flex-direction: flex;
+
     }
   
     .logo {
@@ -175,28 +182,83 @@ header {
     }
   
     .logo img {
-      width: 80%;
+      width: 100%;
     }
   
     nav ul {
       list-style: none;
       display: flex;
-      gap: 2rem;
+      /* gap: 2rem; */
       justify-content: center;
       align-items: center;
     }
+
+    nav ul li{
+      font-size: 1.1rem;
+    }
+
+    .wppHeader button{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      background-color: #005aaa;
+      color: #fff;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      border: 1px solid #005aaa;
+      transition: 0.3s;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+    }
   
     nav {
-      width: 77%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       padding-right: 1rem;
+     
     }
+  }
+
+  @media only screen and (max-width: 1300px) {
+
+    header{
+   
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .logo img{
+      width: 200px;
+    }
+    nav ul {
+
+      gap: 1rem;
+
+    }
+
+    
+    nav ul li{
+      font-size: 1rem;
+    }
+
+    .wppHeader button{
+
+      font-size: 1rem;
+
+    }
+
   }
   
   @media only screen and (max-width: 900px) {
     nav {
+      display: none;
+    }
+
+    .wppHeader{
       display: none;
     }
   

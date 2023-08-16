@@ -19,13 +19,15 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 3rem;
+  padding: 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
   background-attachment: fixed;
   position: relative;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .selo{
@@ -48,12 +50,13 @@ html {
   text-align: center;
   margin: auto;
   margin-bottom: 2rem;
+
 }
 
 .textHero {
   color: #dddddd;
   text-align: center;
-  width: 70%;
+  width: 100%;
   margin: auto;
   font-size: 1.7rem;
   font-weight: bold;
@@ -76,7 +79,7 @@ html {
   cursor: pointer;
   border: 1px solid #4c88b9;
   transition: 0.3s;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
 }
 
@@ -85,32 +88,110 @@ html {
 }
 
 .containerTextHero {
-  width: 50%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .containerImageHero {
-  width: 60%;
-  text-align: center;
+  width: 40%;
+  text-align: left;
 }
 
 .containerImageHero img {
   height: 30rem;
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1500px) {
   .containerImageHero img {
     height: 20rem;
   }
+
+  
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1300px) {
+  .selo{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
   .titleHero {
-    color: #fff;
-    font-size: 2.4rem;
+    color: #ffffff;
+    font-size: 2.1rem;
     font-weight: bold;
     width: 100%;
     text-align: center;
     margin: auto;
+    margin-bottom: 2rem;
+  
+  }
+  
+  .textHero {
+    color: #dddddd;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .selo{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+  }
+
+  .selo img{
+    height: 100px;
+    width: 100px;
+  }
+
+  .containerButtonHero button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #fdff04;
+    color: #000000;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #4c88b9;
+    transition: 0.3s;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero{
+    width: 100vw;
+  }
+
+  .containerTextHero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .titleHero {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
+ 
+    margin: 0;
     margin-bottom: 2rem;
   }
 
@@ -129,9 +210,12 @@ html {
   .textHero {
     color: #ffffff;
     text-align: center;
-    width: 100%;
+    width: 100vw;
     margin: auto;
     font-size: 1.3rem;
+    font-weight: bolder;
+    
+    margin: 0;
   }
 
   .hero {
