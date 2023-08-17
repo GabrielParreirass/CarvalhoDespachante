@@ -525,7 +525,7 @@ html {
 
   .wrapperPergunta{
     width: 100vw;
-    text-align: justify;
+   
     
  
   }
@@ -533,8 +533,8 @@ html {
   .titlePergunta {
     font-size: 1.4em;
     font-weight: bold;
-
-    width: 90%;
+    text-align: justify;
+    width: 80%;
   }
 
   .hiddenResposta {
@@ -542,6 +542,7 @@ html {
     padding-bottom: 1rem;
     font-size: 1.3em;
     padding: 1rem;
+    text-align: justify;
   }
 }
 
