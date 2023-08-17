@@ -517,8 +517,17 @@ html {
 
 @media only screen and (max-width: 900px) {
   .containerPerguntas {
-    padding: 2rem;
+    padding: 0rem;
     width: 100vw;
+    margin-top: 2rem;
+
+  }
+
+  .wrapperPergunta{
+    width: 100vw;
+    text-align: justify;
+    
+ 
   }
 
   .titlePergunta {
@@ -526,6 +535,13 @@ html {
     font-weight: bold;
 
     width: 90%;
+  }
+
+  .hiddenResposta {
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.3em;
+    padding: 1rem;
   }
 }
 
