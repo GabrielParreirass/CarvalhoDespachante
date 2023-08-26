@@ -226,7 +226,9 @@ html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     padding: 3rem;
     display: flex;
     justify-content: center;
