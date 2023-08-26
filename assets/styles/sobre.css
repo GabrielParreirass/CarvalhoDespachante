@@ -1,39 +1,39 @@
-.containerAbout{
-    width: 80vw;
-    margin: auto;
-    margin-top: 8rem;
-    margin-bottom: 5rem;
+.containerAbout {
+  width: 80vw;
+  margin: auto;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
 }
 
-.titleAbout{
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #0169c4;
+.titleAbout {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #0169c4;
 }
 
-.textAbout{
-    font-size: 1.5rem;
+.textAbout {
+  font-size: 1.5rem;
 }
 
-.textAbout p{
-    text-indent: 3rem;
-    margin-bottom: .2rem;
-    text-align: justify;
+.textAbout p {
+  text-indent: 3rem;
+  margin-bottom: 0.2rem;
+  text-align: justify;
 }
-
 
 @media only screen and (max-width: 900px) {
-    .textAbout p{
-        text-indent: 1.5rem;
-        margin-bottom: 1.5rem;
-        text-align: justify;
-    }
-
-    .containerAbout{
-        width: 90vw;
-        margin: auto;
-        margin-top: 3rem;
-        margin-bottom: 5rem;
-    }
+  .textAbout p {
+    text-indent: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    font-size: 1.3rem;
   }
+
+  .containerAbout {
+    width: 90vw;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+}

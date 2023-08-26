@@ -184,27 +184,28 @@ html {
 
   .titleHero {
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: bold;
     width: 100vw;
     text-align: center;
     margin: auto;
     margin-bottom: 2rem;
- 
+
     margin: 0;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
+ 
   }
 
   .selo{
     position: absolute;
     right: 10px;
     top: auto;
-    bottom: 10px;
+    top: 10px;
   }
 
   .selo img{
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
   }
 
   .textHero {
@@ -212,10 +213,11 @@ html {
     text-align: center;
     width: 100vw;
     margin: auto;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: bolder;
     
     margin: 0;
+    margin-top: 1rem
   }
 
   .hero {
@@ -245,6 +247,22 @@ html {
 
   .containerImageHero img {
     height: 15rem;
+  }
+
+  .containerButtonHero button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #fdff04;
+    color: #000000;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid #4c88b9;
+    transition: 0.3s;
+    font-size: 1rem;
+    text-transform: uppercase;
   }
 }
 
